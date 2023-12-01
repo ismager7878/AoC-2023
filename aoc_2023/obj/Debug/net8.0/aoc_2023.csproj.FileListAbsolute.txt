@@ -1,0 +1,14 @@
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\bin\Debug\net8.0\aoc_2023.exe
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\bin\Debug\net8.0\aoc_2023.deps.json
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\bin\Debug\net8.0\aoc_2023.runtimeconfig.json
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\bin\Debug\net8.0\aoc_2023.dll
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\bin\Debug\net8.0\aoc_2023.pdb
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\aoc_2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\aoc_2023.AssemblyInfoInputs.cache
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\aoc_2023.AssemblyInfo.cs
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\aoc_2023.csproj.CoreCompileInputs.cache
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\aoc_2023.dll
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\refint\aoc_2023.dll
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\aoc_2023.pdb
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\aoc_2023.genruntimeconfig.cache
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\ref\aoc_2023.dll
