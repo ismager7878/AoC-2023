@@ -1,12 +1,22 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Net.Security;
 using System.Runtime.ExceptionServices;
 using System.Runtime.Intrinsics.Arm;
 
+class AltDigit{
+    static public List<string> altDigitsNames = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    public string name;
+    public int index;
+    public int number;
+    public AltDigit(string name, int index){
+        this.name = name;
+        this.index = index;
+        number = altDigitsNames.IndexOf(name) + 1;
+    }
+}
 class dec1_2
 {
     List<string> input;
-    List<string> altDigits = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
-
     public dec1_2(List<string> input)
     {
         this.input = input;
@@ -16,47 +26,57 @@ class dec1_2
         int answer = 0;
         foreach (string i in input)
         {
-            string inputString = i;
+            List<AltDigit> altDigits = []; 
             int num = 0;
-            if (altDigits.Any(i.Contains))
+            if (AltDigit.altDigitsNames.Any(i.Contains))
             {
-                foreach (string digit in altDigits)
+                foreach (string digit in AltDigit.altDigitsNames)
                 {
-                    char[] inputArray = inputString.ToCharArray();
+                    char[] inputArray = i.ToCharArray();
 
-                    int first = inputString.IndexOf(digit);
-                    string revString = new string(inputString.Reverse().ToArray());
+                    int first = i.IndexOf(digit);
+                    string revString = new string(i.Reverse().ToArray());
                     int last = revString.IndexOf(new string(digit.Reverse().ToArray()));
 
                     if (first > -1)
                     {
-                        inputArray[first] = char.Parse((altDigits.IndexOf(digit) + 1).ToString());
+                        altDigits.Add(new AltDigit(digit, first));
                     }
                     if (last > -1)
                     {
-                        last = inputString.Length - last - 1;
-                        inputArray[last] = char.Parse((altDigits.IndexOf(digit) + 1).ToString());
+                        last = i.Length - last - digit.Length;
+                        altDigits.Add(new AltDigit(digit, last));
                     }
-                    inputString = new string(inputArray);
                 }
             }
-            char[] iArray = inputString.ToCharArray();
-            char[] iArrayRev = inputString.ToCharArray().Reverse().ToArray();
+            altDigits.Sort((a,b)=> a.index - b.index);
 
-            foreach (char c in iArray)
+            char[] iArray = i.ToCharArray();
+            char[] iArrayRev = i.ToCharArray().Reverse().ToArray();
+
+            for(int x = 0; x < iArray.Length; x++)
             {
                 int charInt;
-                if (int.TryParse(c.ToString(), out charInt))
+                if (int.TryParse(iArray[x].ToString(), out charInt))
                 {
+
+                    if(altDigits.Count > 0 && x > altDigits[0].index){
+                        num = num * 10 + altDigits[0].number;
+                        break;
+                    }
                     num = num * 10 + charInt;
                     break;
                 }
             }
-            foreach (char c in iArrayRev)
+            for(int x = 0; x < iArrayRev.Length; x++)
             {
                 int charInt;
-                if (int.TryParse(c.ToString(), out charInt))
+                if (int.TryParse(iArrayRev[x].ToString(), out charInt))
                 {
+                    if(altDigits.Count > 0 && (iArrayRev.Length - x - 1) < altDigits[altDigits.Count - 1].index){
+                        num = num * 10 + altDigits[altDigits.Count - 1].number;
+                        break;
+                    }
                     num = num * 10 + charInt;
                     break;
                 }
