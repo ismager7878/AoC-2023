@@ -27,3 +27,4 @@ C:\Users\aobar\Documents\GitHub Repos\AoC-2023\aoc_2023\obj\Debug\net8.0\refint\
 C:\Users\aobar\Documents\GitHub Repos\AoC-2023\aoc_2023\obj\Debug\net8.0\aoc_2023.pdb
 C:\Users\aobar\Documents\GitHub Repos\AoC-2023\aoc_2023\obj\Debug\net8.0\aoc_2023.genruntimeconfig.cache
 C:\Users\aobar\Documents\GitHub Repos\AoC-2023\aoc_2023\obj\Debug\net8.0\ref\aoc_2023.dll
+C:\Users\aobar\Desktop\Repos\AoC 2023\aoc_2023\obj\Debug\net8.0\aoc_2023.sourcelink.json

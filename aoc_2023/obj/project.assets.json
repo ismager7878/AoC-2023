@@ -8,24 +8,31 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\aobar\\.nuget\\packages\\": {}
+    "C:\\Users\\aobar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aobar\\Documents\\GitHub Repos\\AoC-2023\\aoc_2023\\aoc_2023.csproj",
+      "projectUniqueName": "C:\\Users\\aobar\\Desktop\\Repos\\AoC 2023\\aoc_2023\\aoc_2023.csproj",
       "projectName": "aoc_2023",
-      "projectPath": "C:\\Users\\aobar\\Documents\\GitHub Repos\\AoC-2023\\aoc_2023\\aoc_2023.csproj",
+      "projectPath": "C:\\Users\\aobar\\Desktop\\Repos\\AoC 2023\\aoc_2023\\aoc_2023.csproj",
       "packagesPath": "C:\\Users\\aobar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aobar\\Documents\\GitHub Repos\\AoC-2023\\aoc_2023\\obj\\",
+      "outputPath": "C:\\Users\\aobar\\Desktop\\Repos\\AoC 2023\\aoc_2023\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\aobar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\aobar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
