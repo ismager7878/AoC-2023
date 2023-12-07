@@ -14,6 +14,6 @@ List<string> input = inputString.Split("\r\n").ToList();
 //dec5_1 dec5_1 = new dec5_1(input);
 dec6_1 dec6_1 = new dec6_1(input);
 
-long answer = dec6_1.run();
+double answer = dec6_1.run();
 
 Console.WriteLine(answer);
