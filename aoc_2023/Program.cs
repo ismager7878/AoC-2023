@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-string inputString = File.ReadAllText("puzzle_inputs/6dec.txt");
+string inputString = File.ReadAllText("puzzle_inputs/7dec.txt");
 
 List<string> input = inputString.Split("\r\n").ToList();
 
@@ -12,8 +12,9 @@ List<string> input = inputString.Split("\r\n").ToList();
 //dec3_2 dec3_2 = new dec3_2(input);
 //dec4_1 dec4_1 = new dec4_1(input);
 //dec5_1 dec5_1 = new dec5_1(input);
-dec6_1 dec6_1 = new dec6_1(input);
+//dec6_1 dec6_1 = new dec6_1(input);
+dec7_1 dec7_1 = new dec7_1(input);
 
-long answer = dec6_1.run();
+long answer = dec7_1.run();
 
 Console.WriteLine(answer);
