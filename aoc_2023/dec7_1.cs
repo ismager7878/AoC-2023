@@ -1,7 +1,6 @@
 class Hand{
     public int score;
     public int bet;
-
     public string cards;
 
     public Hand(string cards, int bet){
