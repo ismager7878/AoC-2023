@@ -1,8 +1,6 @@
-class Hand
-{
-    private int score;
-    public int Score => score;
-    public int Bet { get; }
+class Hand{
+    public int score;
+    public int bet;
     public string cards;
 
     public Hand(string cards, int bet)
